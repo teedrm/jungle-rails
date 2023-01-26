@@ -4,6 +4,12 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if enhanced_cart == [] %>
+    <h4 class="alert-empty"> Your cart is empty!</h4>
+    <%= link_to "Homepage", products_path %>
+
+  <% else %>
+
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
