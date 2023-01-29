@@ -22,7 +22,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li><%= link_to 'About', :about_index, class: "about-us" %></li>
+      <li><%= link_to 'About', :about_index, class: "nav-link" %></li>
         <%# <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -61,10 +61,18 @@
             <li><%= link_to 'Categories', [:admin, :categories], class: "nav-link" %></li>
           </ul>
         </li>
+
+        <% if current_user %>
+        <li class ="nav-item">Hi, <%= current_user.name %></li> <li class ="nav-item"><%= link_to "Logout", '/logout', class: "nav-link" %></li>
+      <% else %>
+        <li class ="nav-item"><%= link_to "Login", '/login', class: "nav-link" %></li> <li class ="nav-item"><%= link_to "Signup", '/signup', class: "nav-link" %></li>
+      <% end %>
+
         <li class="nav-item end-0">
           <%= link_to cart_path, class: "nav-link " do %> <%= fa_icon "shopping-cart" %>
           My Cart (<%= cart.size %>) <% end %>
         </li>
+        
       </ul>
     </div>
   </div>
