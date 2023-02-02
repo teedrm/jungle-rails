@@ -4,7 +4,9 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 ## Finaly product
 
-
+!["Products page"](https://github.com/teedrm/jungle-rails/blob/master/docs/Screenshot%202023-02-01%20at%205.56.33%20PM.png)
+!["Mobile version"](https://github.com/teedrm/jungle-rails/blob/master/docs/Screenshot%202023-02-01%20at%205.56.09%20PM.png)
+!["Cart"](https://github.com/teedrm/jungle-rails/blob/master/docs/Screenshot%202023-02-01%20at%205.56.56%20PM.png)
 
 ## Setup
 
